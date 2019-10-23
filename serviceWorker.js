@@ -32,7 +32,7 @@ self.addEventListner('install', function(e){
 
 });
 
-//  fetch events in service worker
+//  fetch the events in service worker
 self.addEventListner('fetch', function(e){
 e.respondWith(
 		caches.match(e.request).then(function(response){
